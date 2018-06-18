@@ -1,0 +1,38 @@
+body, html {
+    font-family: $body-font-family;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-md {
+    @include btn-md;
+    
+    &:hover {
+        @include hover-focus {
+            // text-decoration: none;
+            background: darken( $btn-background, 5% );
+          }
+    }
+}
+
+.icon-col {
+    padding: 0 $icon-col-padding;
+}
+
+.icon {
+    width: $icon-width;
+}
+
+.text-col {
+    padding: 0;
+}
+
+@include media-breakpoint-up(sm) {
+    .text-col {
+        padding: 0 $text-col-padding;
+    }
+    
+  }
+
+
+

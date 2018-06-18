@@ -1,0 +1,67 @@
+// Welcome Page Globals
+
+.section {
+    @include section-heading;
+    padding: 3rem 3rem;
+
+}
+
+@include media-breakpoint-up(sm) {
+    .section {
+        padding: $section-padding;;
+    
+    }
+}
+
+
+
+// About Section
+
+#about {
+    background: #efefef;
+}
+
+#services {
+
+    .icon-col {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    h1 {
+        margin-bottom: 4rem;
+    }
+
+    h2 {
+        font-weight: 700;
+    
+    }
+
+    p {
+        margin-top: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        .icon-col {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+
+        // p {
+        //     margin-bottom: 0;
+        // }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .icon-col {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+

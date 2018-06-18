@@ -1,0 +1,189 @@
+
+// The Carousel
+
+  .header-img {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+	  background-position: center center;
+	  background-repeat: no-repeat;
+  }
+
+  .slide-1 {
+    background-image: url("/../img/carousel/grain-chute-xs.jpg");
+  }
+
+  .slide-2 {
+    background-image: url("/../img/carousel/new-grain-xs.jpg");
+  }
+
+  .slide-3 {
+    background-image: url("/../img/carousel/silos-xs.jpg");
+  }
+
+  .slide-4 {
+    background-image: url("/../img/carousel/spike-xs.jpg");
+  }
+
+  @include media-breakpoint-up(sm) {
+    
+    .slide-1 {
+      background-image: url("/../img/carousel/grain-chute-sm.jpg"); 
+    }
+
+    .slide-2 {
+      background-image: url("/../img/carousel/new-grain-sm.jpg");
+    }
+  
+    .slide-3 {
+      background-image: url("/../img/carousel/silos-sm.jpg");
+    }
+  
+    .slide-4 {
+      background-image: url("/../img/carousel/spike-sm.jpg");
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+
+    .slide-1 {
+      background-image: url("/../img/carousel/grain-chute-md.jpg"); 
+    }
+
+    .slide-2 {
+      background-image: url("/../img/carousel/new-grain-md.jpg");
+    }
+  
+    .slide-3 {
+      background-image: url("/../img/carousel/silos-md.jpg");
+    }
+  
+    .slide-4 {
+      background-image: url("/../img/carousel/spike-md.jpg");
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+
+    .slide-1 {
+      background-image: url("/../img/carousel/grain-chute-lg.jpg"); 
+    }
+
+    .slide-2 {
+      background-image: url("/../img/carousel/new-grain-lg.jpg");
+    }
+  
+    .slide-3 {
+      background-image: url("/../img/carousel/silos-lg.jpg");
+    }
+  
+    .slide-4 {
+      background-image: url("/../img/carousel/spike-lg.jpg");
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+
+    .slide-1 {
+      background-image: url("/../img/carousel/grain-chute-xl.jpg"); 
+    }
+
+    .slide-2 {
+      background-image: url("/../img/carousel/new-grain-xl.jpg");
+    }
+  
+    .slide-3 {
+      background-image: url("/../img/carousel/silos-xl.jpg");
+    }
+  
+    .slide-4 {
+      background-image: url("/../img/carousel/spike-xl.jpg");
+    }
+  }
+
+  .carousel-fade {
+  .carousel-item {
+    opacity: 0;
+    transition-duration: 3s;
+    transition-property: opacity;
+  }
+}
+
+// The Hero
+
+.hero {
+ 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  
+  h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+  }
+
+  @include media-breakpoint-up(md) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    h1 {
+      font-size: 4.25rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+    
+  }
+}
+
+.dn-arrow-cont {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -10%);
+  width: 80%;
+
+  img {
+    width: 2rem;
+  }
+
+  // 576px
+  @include media-breakpoint-up(md) {
+    img {
+      width: 4rem;
+    }
+  }
+
+  .dn-arrow {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+  
+}
+
+
+
+
+
+
+
+  
